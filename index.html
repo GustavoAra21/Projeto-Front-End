@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Fictícia - Seu E-commerce de Tecnologia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>TechShop</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><button id="open-cart-btn" aria-label="Abrir Carrinho de Compras">🛒 Carrinho (<span
+                            id="cart-count">0</span>)</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="products" class="product-grid">
+            <h2>Nossos Produtos em Destaque</h2>
+        </section>
+
+        <section id="multimedia-ad" class="ad-section">
+            <h3>🎉 Super Oferta da Semana!</h3>
+            <video width="100%" controls autoplay loop muted>
+                <source src="assets/video/promo.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <button id="close-cart-btn" class="close-btn">&times;</button>
+            <h3>🛒 Seu Carrinho</h3>
+            <div id="cart-items-list" class="cart-items-list">
+            </div>
+
+            <div class="cart-summary">
+                <p>Subtotal: <span id="cart-subtotal">R$ 0,00</span></p>
+                <p class="total-line">Total (com imposto fictício): <span id="cart-total">R$ 0,00</span></p>
+            </div>
+
+            <a href="checkout.html" class="checkout-btn" id="go-to-checkout" role="button">
+                Finalizar Compra
+            </a>
+            <p id="empty-cart-message" style="text-align: center; display: none;">Seu carrinho está vazio.</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 TechShop Fictícia. Todos os direitos reservados.</p>
+        <p>Desenvolvido como Projeto Final - Desenvolvimento Web Front-End</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
